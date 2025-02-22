@@ -1,0 +1,7 @@
+<div class="navigation-section">
+  @for (item of navConfiguration; track item.label) {
+    <div [routerLink]="item.route" [routerLinkActive]="'selected'">
+      <span>{{ item.label }}</span>
+    </div>
+  }
+</div>
